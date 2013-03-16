@@ -6,9 +6,7 @@ comments: true
 categories: [Dart, Cool, Test]
 ---
 
-Please allow myself to introduce... [myself][v1].
-
-[v1]: http://www.youtube.com/watch?v=67E42LQsU24
+Please allow myself to introduce... myself.
 
 <!-- more -->
 
