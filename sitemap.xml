@@ -1,12 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>
+            http://jplehmann.github.com/blog/2013/03/15/in-the-beginning-there-was-a-sandbox/
+        </loc>
+        <lastmod>2013-03-15T22:36:30-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://jplehmann.github.com/blog/archives/</loc>
-        <lastmod>2013-03-12T21:04:41-05:00</lastmod>
+        <lastmod>2013-03-15T22:36:30-05:00</lastmod>
     </url>
     <url>
         <loc>http://jplehmann.github.com/</loc>
-        <lastmod>2013-03-12T21:04:41-05:00</lastmod>
+        <lastmod>2013-03-15T22:36:30-05:00</lastmod>
     </url>
     <url>
         <loc>http://jplehmann.github.com/robots.txt</loc>

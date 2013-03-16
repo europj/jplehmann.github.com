@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[John Lehmann's Blog]]></title>
-  <link href="http://jplehmann.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Dart | John Lehmann's Blog]]></title>
+  <link href="http://jplehmann.github.com/blog/categories/dart/atom.xml" rel="self"/>
   <link href="http://jplehmann.github.com/"/>
   <updated>2013-03-15T22:39:35-05:00</updated>
   <id>http://jplehmann.github.com/</id>
@@ -18,7 +18,7 @@
     <link href="http://jplehmann.github.com/blog/2013/03/15/in-the-beginning-there-was-a-sandbox/"/>
     <updated>2013-03-15T18:38:00-05:00</updated>
     <id>http://jplehmann.github.com/blog/2013/03/15/in-the-beginning-there-was-a-sandbox</id>
-    <content type="html"><![CDATA[<p>Please allow myself to introduce&#8230; myself.</p>
+    <content type="html"><![CDATA[<p>Please allow myself to introduce... myself.</p>
 
 <!-- more -->
 
@@ -38,16 +38,15 @@
 </ul>
 
 
-<p>Let&#8217;s start with an adorable kitten.</p>
+<p>Let's start with an adorable kitten.</p>
 
 <p><img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" ></p>
 
 <p>Bacon ipsum dolor sit amet doner salami frankfurter beef pastrami ground round t-bone shank. Pork ham hock salami, strip steak short loin swine biltong hamburger pork loin capicola tongue pig tri-tip frankfurter. Bacon turducken cow chicken jowl shankle. Ball tip beef ribs short loin ham hock boudin pork loin beef shoulder fatback salami cow strip steak kielbasa turducken chicken. Tenderloin tongue ball tip andouille jerky drumstick, brisket cow meatball salami chuck ribeye turkey swine. Leberkas turkey boudin swine spare ribs hamburger meatball.</p>
 
-<p>Then there&#8217;s the blockquote:</p>
+<p>Then there's the blockquote:</p>
 
-<blockquote><p>In fact, stripping out all the comments before pushing code to master does not make it run any faster.</p><footer><strong>@jplehmann</strong> <cite><a href='https://twitter.com/jplehmann/status/312615496270884864'>twitter.com/jplehmann/status/&hellip;</a></cite></footer></blockquote>
-
+<p><blockquote><p>In fact, stripping out all the comments before pushing code to master does not make it run any faster.</p><footer><strong>@jplehmann</strong> <cite><a href='https://twitter.com/jplehmann/status/312615496270884864'>twitter.com/jplehmann/status/&hellip;</a></cite></footer></blockquote></p>
 
 <p>Standard snippet for embedding a tweet:</p>
 
@@ -70,76 +69,65 @@
 <iframe width="420" height="315" src="http://www.youtube.com/embed/HQqIQyT-RuM?rel=0&start=48" frameborder="0" allowfullscreen></iframe>
 
 
-
+<p></p>
 
 <br><br>
 
 
-<p>Let&#8217;s turn to code.</p>
+<p>Let's turn to code.</p>
 
 <pre><code>By simply indenting 4 spaces,
 we get a code block, thanks to Markdown.
 </code></pre>
 
-<p>Codeblock plugin activated via triple-backticks gives us line numbers:</p>
+<p>Codeblock plugin activated via triple-backticks gives us line numbers:
+<code>
+$ sudo make me a sandwich
+</code></p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo make me a sandwich</span></code></pre></td></tr></table></div></figure>
+<p>With syntax highlighting:
+<code>python
+def something_cool(a, b):
+  return a + b
+</code></p>
 
+<p>Here's one with a url:</p>
 
-<p>With syntax highlighting:</p>
+<p>``` ruby Discover if a number is prime http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/ Source Article
+class Fixnum
+  def prime?</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">something_cool</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span class='line'>  <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-</span></code></pre></td></tr></table></div></figure>
+<pre><code>('1' * self) !~ /^1?$|^(11+?)\1+$/
+</code></pre>
 
-
-<p>Here&#8217;s one with a url:</p>
-
-<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/'>Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
-</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<p>  end
+end
+```</p>
 
 <p>Inline code blocks here.</p>
 
-<figure class='code'><figcaption><span>Time to be Awesome - awesome.rb </span></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Time to be Awesome - awesome.rb </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Awesome!&quot;</span> <span class="k">unless</span> <span class="n">lame</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Or another one</p>
 
-<figure class='code'><figcaption><span>Javascript Array Syntax </span><a href='http://j.mp/pPUUmW'>MDN Documentation </a></figcaption> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Javascript Array Syntax </span><a href='http://j.mp/pPUUmW'>MDN Documentation </a></figcaption> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
 </span><span class='line'><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">elementN</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
+<p>Here's a gist:</p>
 
-<p>Here&#8217;s a gist:</p>
-
-<div><script src='https://gist.github.com/996818.js'></script>
+<p><div><script src='https://gist.github.com/996818.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
-
+</p>
 
 <p>Some jsFiddle:</p>
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light/"></iframe>
-
-
-
+<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light/"></iframe></p>
 ]]></content>
   </entry>
   
